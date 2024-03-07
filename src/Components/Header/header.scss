@@ -1,4 +1,19 @@
 header {
-  background-color: var(--main-color);
-  height: 80px;
+  padding-top: 48px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-bottom: 1px solid var(--bored-color);
+  padding-bottom: 25px;
+}
+.header__logo {
+  margin-right: 100px;
+}
+.header__menu {
+  width: 375px;
+  margin-right: auto;
 }
