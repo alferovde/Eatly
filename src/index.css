@@ -20,15 +20,31 @@ margin: 0;
 padding: 0;
 font-family:  "Plus Jakarta Sans", sans-serif;
 
+
 }
 
 .container{
   max-width: 1248px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
   
 }
 
+a.active{
+  color: var(--title-color2);
+}
 
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  line-height: 26px;
+  font-size: 18px;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  transition: .2s;
+}
 
 button{
   
@@ -73,9 +89,18 @@ button{
 
 @media (max-width: 1024px){
   .container{
-    width: 887px;
+    max-width: 887px;
     margin: 0 auto;
-    background-color: #c9e2b9;
+    
+  }
+}
+
+
+@media (max-width: 768px){
+  .container{
+    max-width: 728px;
+    margin: 0 auto;
+    
   }
 }
 
@@ -88,7 +113,7 @@ button{
   }
  
   .container{
-    width: 315px;
+    max-width: 315px;
     margin: 0 auto;
     background-color: #6786ec;
   }

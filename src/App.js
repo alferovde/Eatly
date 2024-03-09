@@ -2,6 +2,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import MenuPage from "./Components/MenuPage/MenuPage";
 import "./index.css";
+import "animate.css";
 import { Outlet } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import BlogPage from "./Components/BlogPage/BlogPage";
