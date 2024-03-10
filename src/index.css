@@ -23,6 +23,10 @@ font-family:  "Plus Jakarta Sans", sans-serif;
 
 }
 
+.main{
+  padding-top: 100px;
+}
+
 .container{
   max-width: 1248px;
   margin: 0 auto;
@@ -91,6 +95,8 @@ button{
   .container{
     max-width: 887px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
     
   }
 }
@@ -100,6 +106,22 @@ button{
   .container{
     max-width: 728px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  
+    
+  }
+}
+
+@media (max-width:522px){
+  .container{
+    max-width: 520px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
     
   }
 }
@@ -115,6 +137,6 @@ button{
   .container{
     max-width: 315px;
     margin: 0 auto;
-    background-color: #6786ec;
+   
   }
 }
