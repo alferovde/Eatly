@@ -1,0 +1,67 @@
+.restaurants {
+  height: 640px;
+
+  h2 {
+    font-size: 45px;
+    text-align: center;
+
+    span {
+      color: var(--main-color);
+    }
+    margin-bottom: 85px;
+  }
+  .restaurants__wrapper {
+    border-bottom: 1px solid var(--bored-color);
+    padding-bottom: 100px;
+  }
+
+  .restaurants__items {
+    height: 300px;
+    display: flex;
+
+    gap: 30px;
+  }
+
+  .restaurants__viewall {
+    display: flex;
+    justify-content: end;
+    margin-top: 65px;
+    a {
+      color: #acadb9;
+      display: flex;
+      font-size: 20px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      align-items: center;
+    }
+    svg {
+      height: 20px;
+    }
+    svg path {
+      stroke: #acadb9;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .restaurants {
+    height: 1695px;
+
+    h2 {
+      margin-bottom: 50px;
+    }
+
+    .restaurants__wrapper {
+      flex-direction: column;
+      display: flex;
+      height: 100%;
+    }
+    .restaurants__items {
+      flex-direction: column;
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+      justify-content: center;
+      gap: 70px;
+    }
+  }
+}

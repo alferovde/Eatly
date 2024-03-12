@@ -11,8 +11,8 @@ const Hero = () => {
   const starRating = (num) => {
     let arr = new Array(num).fill("");
 
-    return arr.map(() => {
-      return <SVGimage src={smallStar} />;
+    return arr.map((item, index) => {
+      return <SVGimage key={index} src={smallStar} />;
     });
   };
 

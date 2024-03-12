@@ -1,9 +1,11 @@
 .downloadapp__wrapper {
   height: 745px;
 
-  margin: 100px auto 100px auto;
+  margin: 100px auto 50px auto;
   display: flex;
   justify-content: space-evenly;
+
+  border-bottom: 1px solid var(--bored-color);
 
   .downloadapp__img {
     // width: 50%;
@@ -85,6 +87,7 @@
 
 @media (max-width: 1024px) {
   .downloadapp__wrapper {
+    height: 550px;
     .downloadapp__img {
       img {
         width: 216px;
@@ -136,7 +139,7 @@
   .downloadapp__wrapper {
     flex-direction: column;
 
-    height: 1000px;
+    height: 1100px;
 
     .downloadapp__info {
       order: 1;

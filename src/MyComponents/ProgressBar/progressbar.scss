@@ -1,0 +1,14 @@
+.progressbar__wrapper {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  border-radius: 5px;
+
+  .progress {
+    display: flex;
+
+    height: 100%;
+
+    border-radius: 5px;
+  }
+}
