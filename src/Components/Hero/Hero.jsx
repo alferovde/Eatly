@@ -7,6 +7,7 @@ import hero_arrow3 from "../../Image/hero_arrow3.png";
 import MyButton from "../../MyComponents/MyButton/MyButton";
 import { bigStar, smallStar, starName } from "../../Store/sprite";
 import SVGimage from "../../MyComponents/SVGimage/SVGimage";
+
 const Hero = () => {
   const starRating = (num) => {
     let arr = new Array(num).fill("");

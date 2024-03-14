@@ -124,3 +124,30 @@ export const purchasesFormItems = [
     imgcolor: "F2FDF6",
   },
 ];
+
+export const reviewsItems = [
+  {
+    id: 0,
+    img: "face.png",
+    name: "Alexander R.",
+    text: "“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”",
+    time: "01 Year With Us ",
+    stars: "5",
+  },
+  {
+    id: 1,
+    img: "face.png",
+    name: "Alexander R.",
+    text: "“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time”",
+    time: "01 Year With Us ",
+    stars: "4",
+  },
+  {
+    id: 2,
+    img: "face.png",
+    name: "Alexander R.",
+    text: "“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time”",
+    time: "01 Year With Us ",
+    stars: "3",
+  },
+];

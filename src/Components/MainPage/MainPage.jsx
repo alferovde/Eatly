@@ -6,6 +6,8 @@ import DownloadApp from "../DownloadApp/DownloadApp";
 import Restaurants from "../Restaurants/Restaurants";
 import Dishes from "../Dishes/Dishes";
 import Purchases from "../Purchases/Purchases";
+import Reviews from "../Reviews/Reviews";
+import Subscribe from "../Subscribe/Subscribe";
 const MainPage = () => {
   return (
     <div className="mainpage__container">
@@ -16,6 +18,8 @@ const MainPage = () => {
         <Restaurants />
         <Dishes />
         <Purchases />
+        <Reviews />
+        <Subscribe />
       </div>
     </div>
   );
