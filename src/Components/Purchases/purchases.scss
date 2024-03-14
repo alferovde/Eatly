@@ -84,6 +84,12 @@
 }
 
 @media (max-width: 1024px) {
+  .purchases {
+    height: 500px;
+    width: 100%;
+    margin-top: 70px;
+  }
+
   .purchases__info {
     h2 {
       font-size: 36px;
