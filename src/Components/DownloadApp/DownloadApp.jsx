@@ -1,7 +1,7 @@
 import React from "react";
 import "./downloadapp.scss";
 import modile_phone from "../../Image/MobileScreen.png";
-import MyButton from "../../MyComponents/MyButton/MyButton";
+import MyButton from "../../MyComponents/MyButton1/MyButton";
 import SVGimage from "../../MyComponents/SVGimage/SVGimage";
 import { arrowLeft } from "../../Store/sprite";
 const DownloadApp = () => {

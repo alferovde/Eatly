@@ -18,12 +18,17 @@
   background-color: var(--bored-color);
   nav {
     flex-direction: column;
-
+    position: relative;
     a {
       font-size: 24px;
       margin-bottom: 15px;
     }
+    margin-bottom: 50px;
   }
+}
+
+.loginComponent {
+  margin-right: 30px;
 }
 
 .mobile-menu__burger {

@@ -2,7 +2,7 @@ import React from "react";
 import "./subscribe.scss";
 import { subscribeBG } from "../../Store/sprite";
 import MyInput from "../../MyComponents/MyInput/MyInput";
-import MyButton from "../../MyComponents/MyButton/MyButton";
+import MyButton from "../../MyComponents/MyButton1/MyButton";
 const Subscribe = () => {
   return (
     <section className="subscribe">

@@ -34,6 +34,11 @@ header {
 }
 
 .header__login {
+  .loginComponent {
+    .button__transparent_sans_border {
+      margin-right: 10px;
+    }
+  }
 }
 
 .mobile-menu {

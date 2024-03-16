@@ -1,11 +1,24 @@
 import React from "react";
-import MyButton from "../../MyComponents/MyButton/MyButton";
 
-const LoginComponent = () => {
+import CorrectButton from "../../MyComponents/CorrectButton/CorrectButton";
+
+const LoginComponent = ({ setLoginModalHidden, loginModalHidden }) => {
+  const handlerOpenModalLogin = () => {
+    setLoginModalHidden(!loginModalHidden);
+  };
+
   return (
-    <div>
-      <MyButton className="button__transparent_sans_border">Login</MyButton>
-      <MyButton className="button__color">Sign Up</MyButton>
+    <div className="loginComponent">
+      <CorrectButton
+        className="button__transparent_sans_border"
+        onClick={handlerOpenModalLogin}
+      >
+        Login
+      </CorrectButton>
+
+      <CorrectButton className="button__color" onClick={handlerOpenModalLogin}>
+        Sign Up
+      </CorrectButton>
     </div>
   );
 };

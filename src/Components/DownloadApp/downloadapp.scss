@@ -138,7 +138,7 @@
 @media (max-width: 768px) {
   .downloadapp__wrapper {
     flex-direction: column;
-
+    margin: 0px auto 50px auto;
     height: 1100px;
 
     .downloadapp__info {
@@ -184,4 +184,7 @@
       order: 2;
     }
   }
+}
+
+@media (max-width: 768px) {
 }

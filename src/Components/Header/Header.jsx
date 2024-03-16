@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SVGimage from "../../MyComponents/SVGimage/SVGimage";
 import { logo } from "../../Store/sprite";
 import "./header.scss";
-import MyButton from "../../MyComponents/MyButton/MyButton";
+
 import LoginComponent from "../LoginComponent/LoginComponent";
 import Menu from "../Menu/Menu";
 import { NavLink } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import MobileMenu from "../MobileMenu/MobileMenu";
-import { useEffect } from "react";
+
+import LoginForm from "../LoginForm/LoginForm";
 const Header = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(max-width: 768px)",
@@ -18,10 +19,26 @@ const Header = () => {
     query: "(max-width: 500px)",
   });
 
-  console.log(isDesktopOrLaptop);
+  const [loginModalHidden, setLoginModalHidden] = useState(false);
+
+  useEffect(() => {
+    if (loginModalHidden) {
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.body.style.overflow = "scroll";
+    };
+  }, [loginModalHidden]);
 
   return (
     <header className="header">
+      {loginModalHidden ? (
+        <LoginForm
+          setLoginModalHidden={setLoginModalHidden}
+          loginModalHidden={loginModalHidden}
+        />
+      ) : undefined}
       <div className="header__wrapper container">
         <div className="header__logo">
           <NavLink
@@ -41,13 +58,19 @@ const Header = () => {
 
         {!isMobile ? (
           <div className="header__login">
-            <LoginComponent />
+            <LoginComponent
+              loginModalHidden={loginModalHidden}
+              setLoginModalHidden={setLoginModalHidden}
+            />
           </div>
         ) : undefined}
 
         {isDesktopOrLaptop ? (
           <div className="mobile-menu">
-            <MobileMenu />
+            <MobileMenu
+              loginModalHidden={loginModalHidden}
+              setLoginModalHidden={setLoginModalHidden}
+            />
           </div>
         ) : undefined}
       </div>

@@ -4,10 +4,10 @@ import hero_img from "../../Image/hero_img.png";
 import hero_img2 from "../../Image/hero_graph2.png";
 import hero_graph from "../../Image/hero_graph1.png";
 import hero_arrow3 from "../../Image/hero_arrow3.png";
-import MyButton from "../../MyComponents/MyButton/MyButton";
+
 import { bigStar, smallStar, starName } from "../../Store/sprite";
 import SVGimage from "../../MyComponents/SVGimage/SVGimage";
-
+import CorrectButton from "../../MyComponents/CorrectButton/CorrectButton";
 const Hero = () => {
   const starRating = (num) => {
     let arr = new Array(num).fill("");
@@ -31,8 +31,10 @@ const Hero = () => {
             Get a <span>$20 bonus</span>.
           </p>
           <div className="hero__buttons">
-            <MyButton className="button__color">Get Started</MyButton>
-            <MyButton className="button__transparent">Go Pro</MyButton>
+            <CorrectButton className="button__color">Get Started</CorrectButton>
+            <CorrectButton className="button__transparent">
+              Go Pro
+            </CorrectButton>
           </div>
           <div className="hero__rating">
             <SVGimage src={bigStar} />

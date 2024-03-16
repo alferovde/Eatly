@@ -248,3 +248,9 @@ export const socialItems = [
     link: "#",
   },
 ];
+
+export const usersArray = [
+  { id: 0, name: "Администратор", email: "111", password: "111" },
+  { id: 1, name: "Dima", email: "222", password: "222" },
+  { id: 2, name: "Vova", email: "333", password: "333" },
+];

@@ -4,7 +4,10 @@ import Menu from "../Menu/Menu";
 import "./mobilemenu.scss";
 import SVGimage from "../../MyComponents/SVGimage/SVGimage";
 import { logo } from "../../Store/sprite";
-const MobileMenu = () => {
+import LoginComponent from "../LoginComponent/LoginComponent";
+import { NavLink } from "react-router-dom";
+
+const MobileMenu = ({ loginModalHidden, setLoginModalHidden }) => {
   const [hiddenMenu, setHiddenMenu] = useState(false);
   const [animatStyle, setAnimatStyle] = useState("");
 
@@ -54,6 +57,10 @@ const MobileMenu = () => {
           >
             <nav className="mobile-menu__wrapper ">
               <Menu className="" />
+
+              <NavLink onClick={() => setLoginModalHidden(!loginModalHidden)}>
+                Login
+              </NavLink>
             </nav>
           </div>
         </div>
