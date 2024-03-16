@@ -154,7 +154,7 @@ export const reviewsItems = [
 
 export const socialItems = [
   {
-    id: 0,
+    id: 1,
     img: (
       <svg
         width="22"
@@ -185,7 +185,7 @@ export const socialItems = [
     link: "#",
   },
   {
-    id: 0,
+    id: 2,
     img: (
       <svg
         width="22"
@@ -206,7 +206,7 @@ export const socialItems = [
     link: "#",
   },
   {
-    id: 0,
+    id: 3,
     img: (
       <svg
         width="11"
@@ -227,7 +227,7 @@ export const socialItems = [
     link: "#",
   },
   {
-    id: 0,
+    id: 4,
     img: (
       <svg
         width="22"

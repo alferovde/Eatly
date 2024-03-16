@@ -6,8 +6,6 @@ import SVGimage from "../SVGimage/SVGimage";
 const CurrentSlide = ({ img, name, text, time, stars }) => {
   const logo = require(`../../Image/${img}`);
 
-  console.log(img);
-
   return (
     <div className="currentslide">
       <div className="slide__header">

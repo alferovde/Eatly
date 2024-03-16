@@ -1,7 +1,6 @@
 import React from "react";
 import "./progressbar.scss";
 const ProgressBar = ({ style }) => {
-  console.log(style);
   return (
     <div
       className="progressbar__wrapper"
